@@ -14,7 +14,7 @@ Característica: Formulario de compra
     Cuando ingresa las credenciales
 
   @formFill
-  Esquema del escenario: llena la informacion del formulario de compra
+  Esquema del escenario: Llena la informacion del formulario de compra
     Cuando se autentica de forma exitosa, elige los productos de preferencia y llena el formulario con datos basicos "<nameJson>"
     Entonces visualizara la descripcion general "Checkout: Overview"
 

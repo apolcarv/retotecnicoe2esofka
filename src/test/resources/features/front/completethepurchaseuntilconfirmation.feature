@@ -14,7 +14,7 @@ Característica: Orden completada
     Cuando ingresa las credenciales
 
   @OrdenCompleteSuccessFul
-  Esquema del escenario: validar que la compra se haya completado
+  Esquema del escenario: Validar que la compra se haya completado
     Cuando se autentica de forma exitosa y realiza todo el proceso hasta completar el formulario de datos de la compra "<nameJson>"
     Entonces visualizara un mensaje de la compra completada "Thank you for your order!"
 

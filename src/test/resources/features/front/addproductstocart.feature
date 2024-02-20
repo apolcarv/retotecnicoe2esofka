@@ -14,6 +14,6 @@ Característica: Elegir productos
     Cuando ingresa las credenciales
 
   @addTwoProductsToCard
-  Escenario: agregar productos al carro de compras
+  Escenario: Agregar productos al carro de compras
     Cuando se autentica de forma exitosa y agrega dos productos
     Entonces visualizara que se agregaron al carrito de compras 2 productos
