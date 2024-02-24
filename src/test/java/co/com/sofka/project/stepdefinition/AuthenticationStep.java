@@ -5,7 +5,6 @@ import co.com.sofka.project.task.Login;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import io.cucumber.java.es.Cuando;
 import io.cucumber.java.es.Entonces;
 import net.serenitybdd.core.environment.EnvironmentSpecificConfiguration;
 import net.serenitybdd.screenplay.GivenWhenThen;
@@ -41,7 +40,7 @@ public class AuthenticationStep {
         );
     }
 
-    @Cuando("ingresa las credenciales incorrectas")
+    @When("ingresa las credenciales incorrectas")
     public void entertheincorrectcredentials() {
         user = EnvironmentSpecificConfiguration.from(environmentVariables).getProperty(USER_NAME);
         pwd = EnvironmentSpecificConfiguration.from(environmentVariables).getProperty(PWD);
@@ -61,7 +60,7 @@ public class AuthenticationStep {
         );
     }
 
-    @Entonces("visualizara un mensaje de error")
+    @Then("visualizara un mensaje de error")
     public void willDisplayAnErrorMessage() {
         theActorInTheSpotlight().should(
                 seeThat(ValidateErrorCredentials.faild(ERROR_MESSAGE_TEXT))
